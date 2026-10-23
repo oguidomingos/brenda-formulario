@@ -173,6 +173,21 @@ input:focus,textarea:focus,select:focus{outline:0;border-color:var(--rose);backg
   <div class="q"><label for="obs">Mais alguma coisa que eu preciso saber?</label><textarea id="obs" name="Observações"></textarea></div>
 </section>
 
+<section>
+  <h2>7 · Dados para registrar seu domínio</h2>
+  <p class="d">Estes dados são <b>só para registrar o endereço do seu site (.com.br) no Registro.br, em seu nome</b>. Não vão para anúncios nem para ninguém além da Expoente. O domínio fica no seu CPF e é seu.</p>
+  <div class="q"><label for="dnome">Nome completo</label><span class="hint">Exatamente como está no CPF.</span><input type="text" id="dnome" name="Domínio · Nome completo" autocomplete="off"></div>
+  <div class="q"><label for="dcpf">CPF</label><input type="text" id="dcpf" inputmode="numeric" name="Domínio · CPF" placeholder="000.000.000-00"></div>
+  <div class="q"><label for="dnasc">Data de nascimento</label><span class="hint">O Registro.br confere nome e CPF na Receita Federal; a data ajuda se ele pedir.</span><input type="text" id="dnasc" inputmode="numeric" name="Domínio · Data de nascimento" placeholder="dd/mm/aaaa"></div>
+  <div class="q"><label for="dmail">E-mail</label><span class="hint">É nele que chega a confirmação do Registro.br. Use um e-mail que você acessa.</span><input type="text" id="dmail" inputmode="email" name="Domínio · E-mail" placeholder="voce@email.com"></div>
+  <div class="q"><label for="dtel">Telefone</label><input type="tel" id="dtel" name="Domínio · Telefone" placeholder="(62) 90000-0000"></div>
+  <div class="q"><label for="dcep">CEP</label><input type="text" id="dcep" inputmode="numeric" name="Domínio · CEP" placeholder="00000-000"></div>
+  <div class="q"><label for="dlog">Rua / avenida (logradouro)</label><input type="text" id="dlog" name="Domínio · Logradouro"></div>
+  <div class="row q"><div><label for="dnum">Número</label><input type="text" id="dnum" name="Domínio · Número"></div><div><label for="dcomp">Complemento</label><input type="text" id="dcomp" name="Domínio · Complemento" placeholder="Apto, sala..."></div></div>
+  <div class="q"><label for="dbai">Bairro</label><input type="text" id="dbai" name="Domínio · Bairro"></div>
+  <div class="row q"><div><label for="dcid">Cidade</label><input type="text" id="dcid" name="Domínio · Cidade"></div><div><label for="duf">UF</label><input type="text" id="duf" name="Domínio · UF" maxlength="2" placeholder="GO"></div></div>
+</section>
+
 <div class="actions">
   <button type="button" class="btn" id="send">Enviar respostas pelo WhatsApp</button>
   <button type="button" class="btn ghost" id="copy">Copiar respostas</button>
