@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Dra. Brenda · Últimas informações · Expoente</title>
+<style>
+@font-face{font-family:'Cormorant Garamond';font-weight:600;src:url(fonts/CormorantGaramond-600.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Cormorant Garamond';font-weight:600;font-style:italic;src:url(fonts/CormorantGaramond-600i.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Inter;font-weight:400;src:url(fonts/Inter-400.woff2) format('woff2');font-display:swap}
+@font-face{font-family:Inter;font-weight:600;src:url(fonts/Inter-600.woff2) format('woff2');font-display:swap}
+:root{--ink:#2b1d22;--wine:#3b1f2b;--rose:#b0705a;--cream:#faf6f1;--sand:#f1e8df;--mut:#6f5d63;--wa:#1faa59;--line:#e6d9cd}
+*{box-sizing:border-box;margin:0}
+body{font:400 17px/1.55 Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased}
+.w{max-width:640px;margin:0 auto;padding:0 18px}
+header{padding:34px 0 10px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);font-weight:600}
+h1{font:600 clamp(34px,9vw,46px)/1.08 'Cormorant Garamond',serif;color:var(--wine);margin:8px 0 10px}
+h1 em{color:var(--rose)}
+.lead{color:var(--mut);font-size:16.5px}
+.prog{position:sticky;top:0;background:var(--cream);padding:10px 0;z-index:5;border-bottom:1px solid var(--line);margin-top:14px}
+.bar{height:6px;border-radius:9px;background:var(--sand);overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--rose);transition:width .3s}
+.prog small{display:block;margin-top:5px;color:var(--mut);font-size:13px}
+section{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 18px 8px;margin:18px 0}
+section h2{font:600 28px/1.1 'Cormorant Garamond',serif;color:var(--wine);margin-bottom:4px}
+section>p.d{color:var(--mut);font-size:14.5px;margin-bottom:14px}
+.q{margin:0 0 20px}
+.q>label,.q>b{display:block;font-weight:600;margin-bottom:4px}.q>label.opt{font-weight:400;margin-bottom:8px}
+.hint{display:block;color:var(--mut);font-size:13.5px;margin:-2px 0 8px}
+.heard{display:block;background:var(--sand);border-radius:10px;padding:8px 11px;font-size:13.5px;color:var(--wine);margin:2px 0 9px}
+.heard::before{content:"Entendi assim: ";font-weight:600}
+input[type=text],input[type=tel],input[type=number],textarea,select{width:100%;font:inherit;padding:13px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--cream);color:var(--ink)}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus,select:focus{outline:0;border-color:var(--rose);background:#fff}
+.opt{display:flex;gap:11px;align-items:flex-start;padding:11px 12px;border:1.5px solid var(--line);border-radius:12px;margin-bottom:8px;background:var(--cream);cursor:pointer}
+.opt input{margin-top:4px;accent-color:var(--rose);width:18px;height:18px;flex:none}
+.opt:has(input:checked){border-color:var(--rose);background:#b0705a14}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sub{display:none;margin-top:8px}.sub.on{display:block}
+.actions{padding:6px 0 60px}
+.btn{display:flex;justify-content:center;align-items:center;gap:10px;width:100%;background:var(--wa);color:#fff;font:600 17px Inter;padding:17px;border-radius:99px;border:0;cursor:pointer;box-shadow:0 10px 26px #1faa5940}
+.btn.ghost{background:transparent;color:var(--wine);box-shadow:none;border:1.5px solid var(--wine);margin-top:10px;font-size:15px;padding:13px}
+.note{color:var(--mut);font-size:13.5px;text-align:center;margin-top:12px}
+</style>
+</head>
+<body>
+<div class="w">
+<header>
+  <div class="eyebrow">Expoente · Dra. Brenda</div>
+  <h1>Só o que <em>ainda falta</em></h1>
+  <p class="lead">Dra., o resto eu já tirei da nossa conversa de quinta. Aqui é só confirmar e completar, uns 5 minutos pelo celular. Não precisa acertar de primeira: o que não souber, deixa em branco ou escreve "ainda não sei".</p>
+  <div class="prog"><div class="bar"><i id="bar"></i></div><small id="cnt">0% preenchido</small></div>
+</header>
+
+<form id="f" autocomplete="off">
+
+<section>
+  <h2>1 · Quem você é</h2>
+  <p class="d">Vai pro rodapé legal dos anúncios e da página.</p>
+  <div class="q"><label for="nome">Como você quer aparecer nos materiais?</label>
+    <select id="nome" name="Nome nos materiais"><option value="">Escolher</option><option>Dra. Brenda Simeão</option><option>Dra. Brenda Lorrana</option><option>Dra. Brenda Lorrana Simeão</option><option>Outro (escrevo abaixo)</option></select>
+    <input type="text" id="nome2" name="Nome (outro/completo)" placeholder="Nome completo, como no CRO" style="margin-top:8px"></div>
+  <div class="q"><label for="cro">Número do CRO-GO</label><span class="hint">Obrigatório por norma do CFO em toda peça de divulgação.</span><input type="text" id="cro" name="CRO" placeholder="CRO-GO 00000"></div>
+  <div class="q"><label for="cnpj">CNPJ e razão social</label><span class="hint">Se ainda não abriu, escreve "ainda não tenho". Sem problema.</span><input type="text" id="cnpj" name="CNPJ / razão social"></div>
+  <div class="q"><b>Especialidades e formações que podem aparecer</b>
+    <span class="heard">prótese dentária (especialização concluída), reabilitação oral e dentística (pós em andamento).</span>
+    <label class="opt"><input type="checkbox" name="Especialidades" value="Prótese dentária (concluída)"> Prótese dentária (concluída)</label>
+    <label class="opt"><input type="checkbox" name="Especialidades" value="Reabilitação oral (cursando)"> Reabilitação oral (cursando)</label>
+    <label class="opt"><input type="checkbox" name="Especialidades" value="Dentística (cursando)"> Dentística (cursando)</label>
+    <input type="text" name="Outras formações" placeholder="Outros cursos/certificados que valem mostrar" style="margin-top:2px"></div>
+  <div class="q"><label for="posprev">Quando termina a pós atual?</label><input type="text" id="posprev" name="Previsão fim da pós" placeholder="Mês/ano"></div>
+</section>
+
+<section>
+  <h2>2 · O que vamos vender</h2>
+  <p class="d">Combinamos anunciar só facetas por enquanto. Confirma e completa.</p>
+  <div class="q"><b>Procedimentos que podem ser divulgados agora</b>
+    <label class="opt"><input type="checkbox" name="Procedimentos a divulgar" value="Facetas/lentes em resina"> Facetas/lentes em resina</label>
+    <label class="opt"><input type="checkbox" name="Procedimentos a divulgar" value="Troca/correção de facetas feitas por outros"> Troca e correção de facetas feitas por outros profissionais</label>
+    <label class="opt"><input type="checkbox" name="Procedimentos a divulgar" value="Reabilitação oral"> Reabilitação oral</label>
+    <label class="opt"><input type="checkbox" name="Procedimentos a divulgar" value="Facetas em porcelana"> Facetas em porcelana (previstas pro ano que vem)</label>
+    <label class="opt"><input type="checkbox" name="Procedimentos a divulgar" value="Clareamento / limpeza"> Clareamento e limpeza</label>
+    <input type="text" name="Outros procedimentos" placeholder="Outro procedimento" style="margin-top:2px"></div>
+  <div class="q"><label for="foco">Qual é o procedimento nº 1 da primeira campanha?</label>
+    <select id="foco" name="Procedimento foco"><option value="">Escolher</option><option>Facetas em resina</option><option>Troca/correção de facetas</option><option>Reabilitação oral</option><option>Outro (escrevo nas observações)</option></select></div>
+  <div class="q"><label for="enc">O que você faz só por encaminhamento ou não quer anunciar?</label><span class="hint">Ex.: implante, que você leva pra clínica parceira.</span><textarea id="enc" name="Encaminha / não anuncia"></textarea></div>
+</section>
+
+<section>
+  <h2>3 · Valores e pagamento</h2>
+  <p class="d">O que a gente anota sobre preço hoje, pra você corrigir.</p>
+  <div class="q"><b>Valor por dente no seu consultório particular</b>
+    <span class="heard">entre R$ 400 e R$ 500 por dente. Nas clínicas parceiras varia de R$ 400 a R$ 1.000 e a maior parte fica com a clínica.</span>
+    <div class="row"><input type="number" inputmode="numeric" name="Valor por dente (de)" placeholder="De R$"><input type="number" inputmode="numeric" name="Valor por dente (até)" placeholder="Até R$"></div></div>
+  <div class="q"><b>Ticket médio de um tratamento</b>
+    <span class="heard">cerca de R$ 5.000 por arcada e até R$ 8.000 no total.</span>
+    <div class="row"><input type="number" inputmode="numeric" name="Ticket médio (R$)" placeholder="Ticket médio R$"><input type="number" inputmode="numeric" name="Ticket do caso completo (R$)" placeholder="Caso completo R$"></div></div>
+  <div class="q"><b>Formas de pagamento</b>
+    <span class="heard">só à vista ou cartão de crédito, sem convênio.</span>
+    <label class="opt"><input type="checkbox" name="Pagamento" value="À vista / Pix"> À vista / Pix</label>
+    <label class="opt"><input type="checkbox" name="Pagamento" value="Cartão de crédito"> Cartão de crédito</label>
+    <label class="opt"><input type="checkbox" name="Pagamento" value="Parcelo direto (sem cartão)"> Parcelo direto, sem cartão</label>
+    <input type="text" name="Parcelas" placeholder="Parcela em até quantas vezes?" style="margin-top:2px"></div>
+  <div class="q"><b>A avaliação inicial é…</b>
+    <label class="opt"><input type="radio" name="Avaliação" value="Gratuita"> Gratuita</label>
+    <label class="opt"><input type="radio" name="Avaliação" value="Paga"> Paga</label>
+    <input type="text" name="Avaliação (valor e duração)" placeholder="Valor (se paga) e quanto tempo dura" style="margin-top:2px"></div>
+  <div class="q"><b>O robô do WhatsApp pode falar preço?</b>
+    <label class="opt"><input type="radio" name="Robô e preço" value="Só valor por dente"> Sim, só o valor por dente</label>
+    <label class="opt"><input type="radio" name="Robô e preço" value="Faixa do tratamento"> Sim, uma faixa do tratamento</label>
+    <label class="opt"><input type="radio" name="Robô e preço" value="Só na avaliação"> Não, preço só na avaliação</label></div>
+</section>
+
+<section>
+  <h2>4 · Onde e quando</h2>
+  <p class="d">Endereço e horário viram o Google Meu Negócio, a página e o texto do robô.</p>
+  <div class="q"><b>Seu consultório hoje</b>
+    <label class="opt"><input type="radio" name="Situação do consultório" value="Alugo sala hoje e vou manter"> Alugo uma sala e vou manter</label>
+    <label class="opt"><input type="radio" name="Situação do consultório" value="Vou mudar para sala própria"> Estou alugando uma sala só minha (em andamento)</label>
+    <label class="opt"><input type="radio" name="Situação do consultório" value="Ainda sem endereço fixo"> Ainda sem endereço fixo pro particular</label></div>
+  <div class="q"><label for="end">Endereço completo</label><span class="hint">Rua, número, sala, bairro, cidade e CEP. Se ainda não definiu, escreve o provável.</span><textarea id="end" name="Endereço"></textarea>
+    <input type="text" name="Estacionamento / referência" placeholder="Estacionamento e ponto de referência" style="margin-top:8px"></div>
+  <div class="q"><label for="hor">Dias e horários de atendimento particular</label><span class="hint">Você disse que quer uma agenda definida e parar de atender à noite e fim de semana. Escreve a agenda que você QUER, mesmo que ainda não seja a de hoje.</span><textarea id="hor" name="Horários"></textarea></div>
+  <div class="q"><label for="cap">Quantas avaliações novas por semana você consegue encaixar?</label><span class="hint">Nossa meta é 1 paciente fechado por semana.</span><input type="number" inputmode="numeric" id="cap" name="Avaliações novas por semana"></div>
+  <div class="q"><b>Raio de atuação pros anúncios</b>
+    <span class="heard">Goiânia e arredores, com Anápolis se precisar. Começamos com raio pequeno.</span>
+    <label class="opt"><input type="checkbox" name="Cidades" value="Goiânia"> Goiânia</label>
+    <label class="opt"><input type="checkbox" name="Cidades" value="Aparecida de Goiânia"> Aparecida de Goiânia</label>
+    <label class="opt"><input type="checkbox" name="Cidades" value="Goianira"> Goianira</label>
+    <label class="opt"><input type="checkbox" name="Cidades" value="Anápolis"> Anápolis</label>
+    <input type="text" name="Outras cidades" placeholder="Outras cidades ou bairros" style="margin-top:2px">
+    <input type="text" name="Raio em km" placeholder="Até quantos km você topa se deslocar?" style="margin-top:8px"></div>
+  <div class="q"><b>Pacientes brasileiros que moram fora</b>
+    <span class="heard">atende quando eles vêm ao Brasil, e anunciar pro exterior ficou pra depois.</span>
+    <label class="opt"><input type="radio" name="Anúncio exterior" value="Não por enquanto"> Não por enquanto</label>
+    <label class="opt"><input type="radio" name="Anúncio exterior" value="Quero testar"> Quero testar mais pra frente</label></div>
+</section>
+
+<section>
+  <h2>5 · Cuidados e autorizações</h2>
+  <p class="d">Pra eu nunca postar algo que você não queira.</p>
+  <div class="q"><b>O que NÃO divulgar</b>
+    <span class="hint">Marque o que vale pra você.</span>
+    <label class="opt"><input type="checkbox" name="Não divulgar" value="Promoções e ofertas"> Promoções, ofertas e "black friday do sorriso"</label>
+    <label class="opt"><input type="checkbox" name="Não divulgar" value="Preços nos posts"> Preços nos posts e anúncios</label>
+    <label class="opt"><input type="checkbox" name="Não divulgar" value="Nome das clínicas parceiras"> Nome das clínicas onde atendo</label>
+    <label class="opt"><input type="checkbox" name="Não divulgar" value="Que atende em várias clínicas"> Que atendo em várias clínicas</label>
+    <label class="opt"><input type="checkbox" name="Não divulgar" value="Crítica a colegas"> Qualquer crítica que identifique outro dentista</label>
+    <label class="opt"><input type="checkbox" name="Não divulgar" value="Vida pessoal"> Vida pessoal (família, viagens, rotina)</label>
+    <label class="opt"><input type="checkbox" name="Não divulgar" value="Reação emocionada do paciente"> Vídeo de paciente chorando/emocionado na hora</label>
+    <textarea name="Outros não divulgar" placeholder="Algo mais que não pode aparecer, ou tema que você não quer tocar" style="margin-top:2px"></textarea></div>
+  <div class="q"><b>Autorização de imagem dos pacientes</b>
+    <label class="opt"><input type="radio" name="Autorização de imagem" value="Tenho termo assinado em todos os casos"> Tenho termo assinado em todos os casos</label>
+    <label class="opt"><input type="radio" name="Autorização de imagem" value="Tenho em alguns casos"> Tenho só em alguns casos</label>
+    <label class="opt"><input type="radio" name="Autorização de imagem" value="Não tenho, preciso do modelo"> Não tenho, preciso do modelo de termo</label>
+    <input type="text" inputmode="numeric" name="Casos com autorização" placeholder="Quantos casos de antes e depois têm autorização?" style="margin-top:2px">
+    <span class="hint" style="margin-top:10px">Se não tiver, a gente manda um modelo curto pra você assinar com cada paciente antes de postar.</span>
+    <label class="opt"><input type="checkbox" name="Uso de imagem" value="Rosto coberto quando sem autorização"> Posso postar casos com rosto coberto mesmo sem termo (só boca)</label></div>
+</section>
+
+<section>
+  <h2>6 · Anúncios e WhatsApp</h2>
+  <p class="d">Últimos dados pra ligar as campanhas.</p>
+  <div class="q"><label for="wa">WhatsApp profissional que vai receber os contatos</label><span class="hint">Com DDD. Se for o mesmo do pessoal, avisa.</span><input type="tel" id="wa" name="WhatsApp profissional" placeholder="(62) 90000-0000"></div>
+  <div class="q"><b>Quem responde o WhatsApp?</b>
+    <label class="opt"><input type="radio" name="Quem responde" value="Eu"> Eu mesma</label>
+    <label class="opt"><input type="radio" name="Quem responde" value="Secretária"> Secretária ou assistente</label></div>
+  <div class="q"><label for="vb">Quanto quer investir por dia em anúncios no começo?</label><span class="hint">Fica na sua conta do Meta, não passa pela Expoente. Um teste de uns R$ 200 por dia seria uma opção, mas é você quem define.</span><input type="number" inputmode="numeric" id="vb" name="Verba diária (R$)" placeholder="R$ por dia"></div>
+  <div class="q"><b>Já tem cartão cadastrado no Meta?</b>
+    <label class="opt"><input type="radio" name="Cartão no Meta" value="Sim"> Sim</label>
+    <label class="opt"><input type="radio" name="Cartão no Meta" value="Não"> Ainda não</label></div>
+  <div class="q"><label for="obs">Mais alguma coisa que eu preciso saber?</label><textarea id="obs" name="Observações"></textarea></div>
+</section>
+
+<div class="actions">
+  <button type="button" class="btn" id="send">Enviar respostas pelo WhatsApp</button>
+  <button type="button" class="btn ghost" id="copy">Copiar respostas</button>
+  <p class="note">Suas respostas ficam só neste aparelho até você tocar em enviar. Elas vão por WhatsApp direto pro Guilherme.</p>
+</div>
+</form>
+</div>
+
+<script>
+const WA_DEST='5561936180578';
+const f=document.getElementById('f');
+const KEY='brenda-form-v1';
+function fields(){return [...f.elements].filter(e=>e.name)}
+function collect(){
+  const out={};
+  fields().forEach(e=>{
+    if((e.type==='checkbox'||e.type==='radio')&&!e.checked)return;
+    const v=(e.value||'').trim(); if(!v)return;
+    (out[e.name]=out[e.name]||[]).push(v);
+  });
+  return out;
+}
+function groups(){const g=new Set();fields().forEach(e=>g.add(e.name));return [...g]}
+function progress(){
+  const c=collect(),all=groups().length,n=Object.keys(c).length;
+  document.getElementById('bar').style.width=(100*n/all)+'%';
+  document.getElementById('cnt').textContent=Math.round(100*n/all)+'% preenchido';
+  const s={};fields().forEach(e=>{if(e.type==='checkbox'||e.type==='radio')s[e.name+'|'+e.value]=e.checked;else s[e.name]=e.value});
+  try{localStorage.setItem(KEY,JSON.stringify(s))}catch(_){}
+}
+function restore(){try{const s=JSON.parse(localStorage.getItem(KEY)||'{}');
+  fields().forEach(e=>{if(e.type==='checkbox'||e.type==='radio'){if(s[e.name+'|'+e.value])e.checked=true}else if(s[e.name]!=null)e.value=s[e.name]})}catch(_){}}
+function text(){
+  const c=collect();
+  let t='*Dra. Brenda · informações que faltavam*\n';
+  for(const k in c)t+='\n*'+k+':* '+c[k].join('; ');
+  return t;
+}
+f.addEventListener('input',progress);f.addEventListener('change',progress);
+document.getElementById('send').onclick=()=>{
+  const t=text();
+  if(Object.keys(collect()).length===0){alert('Responda pelo menos uma pergunta antes de enviar.');return}
+  location.href='https://wa.me/'+WA_DEST+'?text='+encodeURIComponent(t);
+};
+document.getElementById('copy').onclick=async()=>{
+  try{await navigator.clipboard.writeText(text());alert('Respostas copiadas. É só colar na conversa.')}catch(_){prompt('Copie o texto:',text())}
+};
+restore();progress();
+</script>
+</body>
+</html>
